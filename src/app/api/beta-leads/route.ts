@@ -2,9 +2,22 @@ import { NextResponse } from "next/server";
 
 import { betaLeadInputSchema, deriveLeadStage } from "@/lib/beta-leads";
 import { sendLeadNotification } from "@/lib/notify";
+import { checkRateLimit } from "@/lib/rate-limit";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 
 export async function POST(request: Request) {
+  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+
+  if (!checkRateLimit(ip)) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error: "너무 많은 요청입니다. 잠시 후 다시 시도해 주세요.",
+      },
+      { status: 429 },
+    );
+  }
+
   let body: unknown;
 
   try {

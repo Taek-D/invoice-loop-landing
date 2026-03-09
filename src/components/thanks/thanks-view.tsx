@@ -30,10 +30,10 @@ export function ThanksView({
         <span className="inline-flex rounded-full border border-[var(--accent)]/25 bg-[var(--accent-soft)] px-3 py-1 text-xs font-medium text-[var(--accent-strong)]">
           Beta Application Saved
         </span>
-        <h1 className="mt-5 text-4xl font-semibold text-[var(--ink)]">
+        <h1 className="mt-5 text-2xl font-semibold text-[var(--ink)]">
           신청이 저장됐습니다.
         </h1>
-        <p className="mt-4 text-lg leading-8 text-[var(--muted)]">
+        <p className="mt-4 text-base leading-7 text-[var(--muted)]">
           {roleLabel} 흐름 기준으로 우선 검토한 뒤 48시간 안에 메일로
           연락드릴게요.
         </p>

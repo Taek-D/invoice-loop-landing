@@ -94,12 +94,12 @@ export function LandingPage() {
             <span className="inline-flex rounded-full border border-[var(--accent)]/25 bg-[var(--accent-soft)] px-3 py-1 text-xs font-medium text-[var(--accent-strong)]">
               유료 의향 검증용 베타
             </span>
-            <h2 className="mt-5 text-4xl font-semibold leading-tight text-[var(--ink)] sm:text-5xl">
+            <h2 className="mt-5 text-2xl font-semibold leading-tight text-[var(--ink)] sm:text-3xl">
               외주 크리에이티브 프리랜서를 위한
               <br />
               견적 · 청구 · 입금 관리
             </h2>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--muted)]">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-[var(--muted)]">
               카톡으로 받은 일을, 돈이 들어올 때까지 추적하세요. 청구루프는
               견적부터 청구, 입금 확인, 연체 리마인더까지 한 흐름으로 묶어
               보여주는 초경량 정산 도구를 검증하고 있습니다.
@@ -138,7 +138,7 @@ export function LandingPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/60">
               Beta Perks
             </p>
-            <h3 className="mt-3 text-3xl font-semibold">
+            <h3 className="mt-3 text-xl font-semibold">
               첫 20명에게 먼저 줄 혜택
             </h3>
             <div className="mt-6 space-y-3">
@@ -153,7 +153,7 @@ export function LandingPage() {
             </div>
             <div className="mt-6 rounded-[28px] border border-white/8 bg-white/8 p-5">
               <p className="text-sm text-white/60">지금 검증하려는 것</p>
-              <p className="mt-3 text-xl font-semibold">
+              <p className="mt-3 text-lg font-semibold">
                 신청 전환율 5% 이상, 인터뷰 의사율 30% 이상
               </p>
               <p className="mt-3 text-sm leading-6 text-white/70">
@@ -168,7 +168,7 @@ export function LandingPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--muted)]">
             Segment Toggle
           </p>
-          <h3 className="mt-3 text-3xl font-semibold text-[var(--ink)]">
+          <h3 className="mt-3 text-xl font-semibold text-[var(--ink)]">
             가장 먼저 깊게 풀 타깃을 전환해서 볼 수 있어요
           </h3>
           <p className="mt-3 max-w-3xl leading-7 text-[var(--muted)]">
@@ -210,7 +210,7 @@ export function LandingPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--muted)]">
               Selected Flow
             </p>
-            <h3 className="mt-3 text-3xl font-semibold text-[var(--ink)]">
+            <h3 className="mt-3 text-xl font-semibold text-[var(--ink)]">
               {content.badge}
             </h3>
             <p className="mt-4 leading-7 text-[var(--muted)]">
@@ -237,7 +237,7 @@ export function LandingPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--muted)]">
               Proposed Solution
             </p>
-            <h3 className="mt-3 text-3xl font-semibold text-[var(--ink)]">
+            <h3 className="mt-3 text-xl font-semibold text-[var(--ink)]">
               견적부터 입금까지 하나의 흐름으로 묶습니다
             </h3>
             <p className="mt-4 leading-7 text-[var(--muted)]">
@@ -271,7 +271,7 @@ export function LandingPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--muted)]">
               Document Examples
             </p>
-            <h3 className="mt-3 text-3xl font-semibold text-[var(--ink)]">
+            <h3 className="mt-3 text-xl font-semibold text-[var(--ink)]">
               직군별 예시 문서와 청구 금액
             </h3>
             <div className="mt-6 space-y-4">
@@ -304,7 +304,7 @@ export function LandingPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/60">
                   Dashboard Preview
                 </p>
-                <h3 className="mt-3 text-3xl font-semibold">
+                <h3 className="mt-3 text-xl font-semibold">
                   지금 추적할 돈이 보이는 화면
                 </h3>
               </div>
@@ -349,7 +349,7 @@ export function LandingPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--muted)]">
               FAQ
             </p>
-            <h3 className="mt-3 text-3xl font-semibold text-[var(--ink)]">
+            <h3 className="mt-3 text-xl font-semibold text-[var(--ink)]">
               베타 신청 전에 많이 물을 질문
             </h3>
             <div className="mt-6 space-y-4">

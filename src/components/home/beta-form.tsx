@@ -215,7 +215,7 @@ export function BetaForm({ preferredSegment }: BetaFormProps) {
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--muted)]">
             Beta Application
           </p>
-          <h2 className="mt-3 text-3xl font-semibold text-[var(--ink)]">
+          <h2 className="mt-3 text-xl font-semibold text-[var(--ink)]">
             베타 신청과 인터뷰 의향을 함께 받아요
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-7 text-[var(--muted)]">

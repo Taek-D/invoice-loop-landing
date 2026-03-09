@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7efe6;
+  --foreground: #241912;
+  --panel: rgba(255, 250, 245, 0.84);
+  --card: rgba(255, 255, 255, 0.72);
+  --ink: #23170f;
+  --ink-strong: #120b08;
+  --muted: #6d5b4f;
+  --accent: #d57d53;
+  --accent-strong: #ab5732;
+  --accent-soft: rgba(224, 151, 105, 0.28);
+  --secondary-soft: rgba(125, 160, 186, 0.18);
+  --danger: #a73a28;
+  --danger-soft: rgba(167, 58, 40, 0.08);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-plex-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.85), transparent 28%),
+    radial-gradient(circle at top right, rgba(224, 151, 105, 0.24), transparent 32%),
+    linear-gradient(180deg, #fbf2e8 0%, #f7efe6 42%, #f1e7dc 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(213, 125, 83, 0.24);
 }

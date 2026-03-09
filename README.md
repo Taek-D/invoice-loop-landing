@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 청구루프 검증 MVP v2
 
-## Getting Started
+외주형 크리에이티브 프리랜서를 위한 `견적 · 청구 · 입금 관리` 검증 랜딩 페이지입니다.
 
-First, run the development server:
+## 포함된 것
+
+- 디자이너 / 영상편집자 전환형 카피
+- 유료 의향 검증용 베타 신청 폼
+- Supabase 저장 API (`POST /api/beta-leads`)
+- Resend 운영자 알림
+- PostHog 이벤트 추적
+- `/thanks`, `/privacy` 페이지
+
+## 시작하기
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+개발 서버는 `http://localhost:3000` 에서 열립니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 환경 변수
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`.env.example` 파일을 참고해 `.env.local` 을 만드세요.
 
-## Learn More
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `RESEND_API_KEY`
+- `NOTIFY_EMAIL`
+- `FROM_EMAIL`
+- `CALENDLY_URL`
+- `NEXT_PUBLIC_POSTHOG_KEY`
+- `NEXT_PUBLIC_POSTHOG_HOST`
 
-To learn more about Next.js, take a look at the following resources:
+## 성공 기준
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 2주 내 타깃 유입 300명 이상
+- 베타 신청 25건 이상
+- 인터뷰 희망 8건 이상
+- 월 9,900원 이상 지불 의향 3명 이상
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 데이터베이스
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+실행 가능한 SQL 스키마는 `supabase/schema.sql` 에 있습니다.
